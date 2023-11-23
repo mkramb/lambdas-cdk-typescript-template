@@ -1,0 +1,24 @@
+{
+  "name": "@lambdas/events",
+  "version": "1.0.0",
+  "private": true,
+  "main": "dist/index.js",
+  "scripts": {
+    "clean": "shx rm -fr ./dist",
+    "build": "pnpm clean && rollup -c rollup.config.mjs"
+  },
+  "dependencies": {
+    "aws-lambda": "^1.0.7"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.129",
+    "@rollup/plugin-commonjs": "^25.0.7",
+    "@rollup/plugin-json": "^6.0.1",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-typescript": "^11.1.5",
+    "rollup": "^4.5.1",
+    "typescript": "~5.2.2",
+    "tslib": "^2.6.2",
+    "shx": "^0.3.4"
+  }
+}

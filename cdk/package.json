@@ -1,0 +1,21 @@
+{
+  "name": "cdk",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "tsc -outDir ./dist",
+    "watch": "pnpm build -w",
+    "cdk": "cdk"
+  },
+  "devDependencies": {
+    "@types/node": "^20.9.0",
+    "aws-cdk": "^2.110.1",
+    "ts-node": "^10.9.1",
+    "typescript": "~5.2.2"
+  },
+  "dependencies": {
+    "aws-cdk-lib": "^2.110.1",
+    "constructs": "^10.0.0",
+    "@lambdas/events": "workspace:*"
+  }
+}
